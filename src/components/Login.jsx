@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom"; 
 import { Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import './Login.css';
-
+import users from '../data/user.json' ;
 
 
 const Login = () => {
-  const [destination, setDestination] =useState("/Welcome")
+  const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);
-  const [userType, setUserType] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -22,17 +21,9 @@ const Login = () => {
   };
 
   const handleUserTypeSelect = (type) => {
-    setUserType(type);
+    // setUserType(type);
     handleLogin()
     handleMenuClose();
-  };
-
-  const handleUsernameChange = (e) => {
-    setUsername(e.target.value);
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
   };
 
   const handleLogin = () => {
@@ -40,21 +31,22 @@ const Login = () => {
     // You can check the userType, username, and password values
     // and perform appropriate actions based on the selected user type
 
-    if (userType === 'user') {
-      // Redirect to the user page
-      
-      
+    const auth = users.find(user => user.name === username && user.password === password);
+    console.log(auth);
+    if(auth){
+      if (auth.type === 'user') {
            
-         setDestination("/Welcome")
-      //        
-      //        
-      //set new state 
+         navigate("/Welcome")
+        
       
-    } else if (userType === 'admin') {
-      // Redirect to the admin page
-      setDestination("/Invitation")
+        } else if (auth.type === 'admin') {
+        // Redirect to the admin page
+        navigate("/Invitation")
     
       
+      }
+    }else{
+      alert("Invalid username or password.");
     }
   };
 
@@ -65,32 +57,30 @@ const Login = () => {
         <div className="menu-icon" onClick={handleMenuOpen}>
           <MenuIcon />
         </div>
-        <Menu
+        {/* <Menu
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={handleMenuClose}
         >
           <MenuItem onClick={() => handleUserTypeSelect('user')}>User</MenuItem>
           <MenuItem onClick={() => handleUserTypeSelect('admin')}>Admin</MenuItem>
-        </Menu>
+        </Menu> */}
       </header>
       <div className="input-container">
         <input
           type="text"
           placeholder="Username"
           value={username}
-          onChange={handleUsernameChange}
+          onChange={e => setUsername(e.target.value)}
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
-          onChange={handlePasswordChange}
+          onChange={e => setPassword(e.target.value)}
         />
       </div>
-      <Link to={destination}>
-     <button >Login</button>
-     </Link>
+     <button onClick={handleLogin}>Login</button>
 
       {/* <button className="login-button" onClick={handleLogin}>
       <Link to= {destination}> Login </Link> */}

@@ -3,13 +3,13 @@
 {   
         "name": "Nellie",
          "password":"Tiana",
-          "type": "Admin"
+          "type": "admin"
     },
 
     {
         "name": "Nellie",
         "password":"Jones@9",
-         "type": "User"
+         "type": "user"
    
     }
 
