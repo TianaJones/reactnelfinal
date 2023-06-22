@@ -46,6 +46,7 @@ function App() {
         {/* here now the different pages incl. path to jump to and change screen below Navbar */}
         <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/Invitation" element={<><Navbar /><Invitation/></>} />
         <Route path="/Welcome" element={<><Navbar /><Welcome /></>} />
            <Route path="/" element={<><Navbar /><Home /></>} />
