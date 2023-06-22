@@ -42,19 +42,19 @@ function App() {
       {/* this is where the routes shall be in the code - Router */}
       <Router>
         {/* adding our component Navbar fixed on top */}
-        <Navbar />
+        
         {/* here now the different pages incl. path to jump to and change screen below Navbar */}
         <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/Invitation" element={<Invitation/>} />
-        <Route path="/Welcome" element={<Welcome />} />
-           <Route path="/" element={<Home />} />
-           <Route path="/Menu" element={<Menu/>} />
-          <Route path="/Guest" element={<Guest/>} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/Game" element={<Game />} />
-          <Route path="/Shop" element={<Shop />} />
-          <Route path="/Chatme" element={<Chatme />} /> 
+        <Route path="/Invitation" element={<><Navbar /><Invitation/></>} />
+        <Route path="/Welcome" element={<><Navbar /><Welcome /></>} />
+           <Route path="/" element={<><Navbar /><Home /></>} />
+           <Route path="/Menu" element={<><Navbar /><Menu/></>} />
+          <Route path="/Guest" element={<><Navbar /><Guest/></>} />
+          <Route path="/contact" element={<><Navbar /><Contact /></>} />
+          <Route path="/Game" element={<><Navbar /><Game /></>} />
+          <Route path="/Shop" element={<><Navbar /><Shop /></>} />
+          <Route path="/Chatme" element={<><Navbar /><Chatme /></>} /> 
           
           
           
