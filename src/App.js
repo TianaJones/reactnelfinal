@@ -47,10 +47,10 @@ function App() {
         <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/Invitation" element={<><Navbar /><Invitation/></>} />
-        <Route path="/Welcome" element={<><Navbar /><Welcome /></>} />
+        <Route path="/Invitation" element={<><Invitation/></>} />
+        <Route path="/Welcome" element={<><Welcome /></>} />
            <Route path="/" element={<><Navbar /><Home /></>} />
-           <Route path="/Menu" element={<><Navbar /><Menu/></>} />
+           <Route path="/Menu" element={<><Menu/></>} />
           <Route path="/Guest" element={<><Navbar /><Guest/></>} />
           <Route path="/contact" element={<><Navbar /><Contact /></>} />
           <Route path="/Game" element={<><Navbar /><Game /></>} />
