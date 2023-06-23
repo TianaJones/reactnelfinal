@@ -1,3 +1,6 @@
+import { useNavigate } from "react-router-dom";
+//  export const Guest = () => {
+//     const navigate = useNavigate();
 export function Guest () {
 
     return(
@@ -14,4 +17,5 @@ export function Guest () {
           <button>Read only</button>
         </>
     )
-}
+};
+ 
