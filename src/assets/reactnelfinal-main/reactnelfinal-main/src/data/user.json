@@ -1,0 +1,16 @@
+[
+
+{   
+        "name": "Nellie",
+         "password":"Tiana",
+          "type": "admin"
+    },
+
+    {
+        "name": "Nellie",
+        "password":"Jones@9",
+         "type": "user"
+   
+    }
+
+]

@@ -57,14 +57,14 @@ const Login = () => {
         <div className="menu-icon" onClick={handleMenuOpen}>
           <MenuIcon />
         </div>
-        { <Menu
+        {/* <Menu
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={handleMenuClose}
         >
           <MenuItem onClick={() => handleUserTypeSelect('user')}>User</MenuItem>
           <MenuItem onClick={() => handleUserTypeSelect('admin')}>Admin</MenuItem>
-        </Menu> }
+        </Menu> */}
       </header>
       <div className="input-container">
         <input
