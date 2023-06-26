@@ -13,7 +13,7 @@ export function Invitation () {
             <img  src={logo_event.png}/>
             <h1> Eventify</h1>
         </header>
-        <div>
+        <div className="cards">
         <img src={BIRTHDAY}/> 
      <h1> join us to celebrate </h1>
      <p> Birthday </p>
@@ -30,7 +30,7 @@ export function Invitation () {
 
                 </div>
 
-                <div>
+                <div className="cards">
                 <img src={engage}/>
      <h1>please join us for a surprise</h1>
      <p> Engagement</p>
@@ -48,7 +48,7 @@ export function Invitation () {
                 </div>
 
 
-                <div>
+                <div className="cards">
                 <img  src={wed}/> 
      <h1>You are invited to</h1>
      <p> Our Wedding</p>
@@ -65,7 +65,7 @@ export function Invitation () {
 
                 </div>
 
-                <div>
+                <div className="cards">
                 <img  src={Ani}/> 
      <h1>Annievarsary</h1>
      <p> Save the date</p>

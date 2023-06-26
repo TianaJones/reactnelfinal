@@ -24,7 +24,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import { Invitation } from "./components/Invitation";
 import  Welcome  from "./components/Welcome";
-import { Home } from "./pages/Home.js";
+import { AgendaofEvent } from "./pages/AgendaofEvent.js";
 import { Guest } from "./pages/Guest";
 import { Shop } from "./pages/Shop.js";
 import { Menu } from "./pages/Menu.js";
@@ -46,10 +46,10 @@ function App() {
         {/* here now the different pages incl. path to jump to and change screen below Navbar */}
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/login" element={<Login />} />
+          {/* <Route path="/login" element={<Login />} /> */}
           <Route path="/Invitation" element={<><Invitation /></>} />
           <Route path="/Welcome" element={<><Welcome /></>} />
-          {/* <Route path="/" element={<><Navbar /><Home /></>} /> */}
+          <Route path="/AgendaofEvent" element={<><Navbar /><AgendaofEvent/></>} />
           <Route path="/Menu" element={<><Navbar /><Menu /></>} />
           <Route path="/Guest" element={<><Navbar /><Guest /></>} />
           <Route path="/contact" element={<><Navbar /><Contact /></>} />

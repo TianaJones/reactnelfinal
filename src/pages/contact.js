@@ -6,7 +6,7 @@ export function Contact () {
 
           <div class="con">
             <h1>
-                <span class="about">contact</span> us
+                <span class="about">Contact</span>me
             </h1>
             <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
                     marginwidth="0"
@@ -14,7 +14,7 @@ export function Contact () {
                         href="https://www.maps.ie/distance-area-calculator.html">measure area map</a></iframe>
                         </div>
             {/* <hr> */}
-            <h1>Get in touch </h1>
+            <h1>Get direction </h1>
         <form class="for">
                 <div class="zusa">
                     <i class="fas fa-user"></i>

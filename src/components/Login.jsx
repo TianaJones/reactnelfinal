@@ -4,6 +4,13 @@ import { Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import './Login.css';
 import users from '../data/user.json' ;
+import logo_event from "../assets/logo_event.png"
+import event22 from "../assets/event22.jpg"
+import eventt from "../assets/eventt.jpg"
+import event3 from "../assets/event3.jpg"
+import event2 from "../assets/event2.jpg"
+
+
 
 
 const Login = () => {
@@ -51,9 +58,11 @@ const Login = () => {
   };
 
   return (
-    <div className="login-page">
+    <div className="login-page Login">
+      
       <header>
-        <h1>Eventify</h1>
+        <img src={logo_event} className='img1'/>
+        <h1 className='Even'>Eventify</h1>
         <div className="menu-icon" onClick={handleMenuOpen}>
           <MenuIcon />
         </div>
@@ -66,7 +75,16 @@ const Login = () => {
           <MenuItem onClick={() => handleUserTypeSelect('admin')}>Admin</MenuItem>
         </Menu> }
       </header>
+      <div className='image'>
+        <img src={event22}/> 
+        <img src={event2}/> 
+        <img src={eventt}/> 
+        <img src={event3}/> 
+
+
+      </div>
       <div className="input-container">
+     
         <input
           type="text"
           placeholder="Username"
@@ -79,8 +97,9 @@ const Login = () => {
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
+        <button onClick={handleLogin}>Login</button>
       </div>
-     <button onClick={handleLogin}>Login</button>
+     {/* <button onClick={handleLogin}>Login</button> */}
 
       {/* <button className="login-button" onClick={handleLogin}>
       <Link to= {destination}> Login </Link> */}
