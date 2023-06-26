@@ -4,7 +4,7 @@ import { Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import './Login.css';
 import users from '../data/user.json' ;
-import React from 'react';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -92,13 +92,13 @@ const Login = () => {
       </header>
     <Slider {...settings}>
       <div>
-        <img src="evntt.jpg" alt="eventt" />
+        <img src={eventt} alt= "eventt"/>
       </div>
       <div>
-        <img src="event22.jpg" alt="event22" />
+        <img src={event22} alt="event22" />
       </div>
       <div>
-        <img src="event3.jpg" alt="event3" />
+        <img src={event3.jpg} alt="event3" />
       </div>
     </Slider>
 
