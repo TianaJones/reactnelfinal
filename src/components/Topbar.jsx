@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Topbar = () => {
      return (
         <div className="header">
@@ -5,7 +6,7 @@ const Topbar = () => {
                 <div className="row">
                     <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6">
                         <div className="logo">
-                            <h2><a href="index.html">Eventify</a></h2>
+                            <h2><Link to={"/"}>Eventify</Link></h2>
                         </div>
                         <span className="nav-control">
                             <i className="fa fa-bars"></i>
@@ -22,7 +23,7 @@ const Topbar = () => {
                         </div>
                     </div>
                     <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                        <a href="#" className="btn btn-primary create-event-btn" data-toggle="modal" data-target="#creat-event">Create New Event</a>
+                        <Link to={"/create-event"} className="btn btn-primary create-event-btn" >Create New Event</Link>
                     </div>
                     <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div className="header-user-profile">
@@ -32,12 +33,12 @@ const Topbar = () => {
                                     <p className="ml-3">Nellie Jones</p>
                                 </div>
                                 <div className="dropdown-menu dropdown-menu-right">
-                                    <a className="dropdown-item" href="#">My Profile</a>
-                                    <a className="dropdown-item" href="#">Notifications <span className="badge badge-danger">5</span></a>
-                                    <a className="dropdown-item" href="#">Event Created</a>
-                                    <a className="dropdown-item" href="#">Event Attended </a>
-                                    <a className="dropdown-item" href="#">Elements</a>
-                                    <a className="dropdown-item" href="#">Logout</a>
+                                    <Link className="dropdown-item" to={"/"}>My Profile</Link>
+                                    <Link className="dropdown-item" to={"/"}>Notifications <span className="badge badge-danger">5</span></Link>
+                                    <Link className="dropdown-item" to={"/"}>Event Created</Link>
+                                    <Link className="dropdown-item" to={"/"}>Event Attended </Link>
+                                    <Link className="dropdown-item" to={"/"}>Elements</Link>
+                                    <Link className="dropdown-item" to={"/"}>Logout</Link>
                                 </div>
                             </div>
                         </div>

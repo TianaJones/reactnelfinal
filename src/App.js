@@ -7,6 +7,10 @@ import CreateEvent from "./pages/create-event";
 import Invitation from "./pages/invitation";
 import Events from "./pages/Events";
 import Login from "./pages/Login";
+import Chat from "./pages/Chat";
+import Guests from "./pages/Guest";
+import Shop from "./pages/Shop";
+import Schedule from "./pages/Schedule";
 
 function App() {
   return (
@@ -18,9 +22,14 @@ function App() {
         {/* here now the different pages incl. path to jump to and change screen below Navbar */}<Routes>
           <Route path="/" element={<><Topbar /><MenuBar /><Home /></>} />
           <Route path="/home" element={<><Topbar /><MenuBar /><Home /></>} />
+          <Route path="/home" element={<><Topbar /><MenuBar /><Home /></>} />
           <Route path="/create-event" element={<><Topbar /><MenuBar /><CreateEvent /></>} />
           <Route path="/invitation" element={<><Topbar /><MenuBar /><Invitation /></>} />
           <Route path="/events" element={<><Topbar /><MenuBar /><Events /></>} />
+          <Route path="/chat" element={<><Topbar /><MenuBar /><Chat /></>} />
+          <Route path="/guests" element={<><Topbar /><MenuBar /><Guests /></>} />
+          <Route path="/shop" element={<><Topbar /><MenuBar /><Shop /></>} />
+          <Route path="/schedule" element={<><Topbar /><MenuBar /><Schedule /></>} />
           <Route path="/login" element={<><Login /></>} />
           {/* having a error page when no path found */}
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />

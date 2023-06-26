@@ -1,21 +1,10 @@
-import { useNavigate } from "react-router-dom";
-//  export const Guest = () => {
-//     const navigate = useNavigate();
-export function Guest () {
+import { Link } from "react-router-dom";
+const Guests = () => {
 
     return(
         <>
-    <header>  Guest Page</header>
-    <div>
-        Thanks 
-        for
-        accepting my invite
-    </div>
-    <div className="front">
-            {/* Place your front image here */}
-          </div>
-          <button>Read only</button>
+            
         </>
     )
 };
- 
+export default Guests;

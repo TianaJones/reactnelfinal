@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const MenuBar = () => {
     return (
         <div className="menu">
@@ -7,22 +8,22 @@ const MenuBar = () => {
                         <nav className="topbar-nav">
                             <ul className="metismenu" id="metismenu">
                                 <li>
-                                    <a href="#" aria-expanded="false"> <span className="fa fa-calendar-check-o"></span> Events </a>
+                                    <Link to={"/events"} aria-expanded="false"> <span className="fa fa-calendar-check-o"></span> Events </Link>
                                 </li>
                                 <li>
-                                    <a href=""> <span className="fa fa-gamepad"></span> Games </a>
+                                    <Link to={"/games"}> <span className="fa fa-gamepad"></span> Games </Link>
                                 </li>
                                 <li>
-                                    <a href=""> <span className="fa fa-users"></span> Guests </a>
+                                    <Link to={"guests"}> <span className="fa fa-users"></span> Guests </Link>
                                 </li>
                                 <li>
-                                    <a href="" aria-expanded="false"> <span className="fa fa-envelope"></span> Messages </a>
+                                    <Link to={"/chat"} aria-expanded="false"> <span className="fa fa-comment"></span> Chat </Link>
                                 </li>
                                 <li>
-                                    <a href="calender.html"> <span className="fa fa-calendar"></span> Schedule </a>
+                                    <Link to={"/schedule"}> <span className="fa fa-calendar"></span> Schedule </Link>
                                 </li>
                                 <li>
-                                    <a href="" aria-expanded="false"> <span className="fa fa-shopping-bag"></span> Shop </a>
+                                    <Link to={"/shop"} aria-expanded="false"> <span className="fa fa-shopping-bag"></span> Shop </Link>
                                 </li>
                             </ul>
                         </nav>
