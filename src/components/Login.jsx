@@ -4,6 +4,11 @@ import { Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import './Login.css';
 import users from '../data/user.json' ;
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import logo_event from "../assets/logo_event.png"
 import event22 from "../assets/event22.jpg"
 import eventt from "../assets/eventt.jpg"
@@ -56,8 +61,18 @@ const Login = () => {
       alert("Invalid username or password.");
     }
   };
-
+  const HeroCarousel = () => {
+    const settings = {
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
   return (
+    
     <div className="login-page Login">
       
       <header>
@@ -75,14 +90,21 @@ const Login = () => {
           <MenuItem onClick={() => handleUserTypeSelect('admin')}>Admin</MenuItem>
         </Menu> }
       </header>
-      <div className='image'>
-        <img src={event22}/> 
-        <img src={event2}/> 
-        <img src={eventt}/> 
-        <img src={event3}/> 
-
-
+      return (
+    <Slider {...settings}>
+      <div>
+        <img src="evntt.jpg" alt="eventt" />
       </div>
+      <div>
+        <img src="event22.jpg" alt="event22" />
+      </div>
+      <div>
+        <img src="event3.jpg" alt="event3" />
+      </div>
+    </Slider>
+  );
+  };
+
       <div className="input-container">
      
         <input
