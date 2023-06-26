@@ -11,10 +11,10 @@ const MenuBar = () => {
                                     <Link to={"/events"} aria-expanded="false"> <span className="fa fa-calendar-check-o"></span> Events </Link>
                                 </li>
                                 <li>
-                                    <Link to={"/games"}> <span className="fa fa-gamepad"></span> Games </Link>
+                                    <Link to={"/games"}> <span className="fa fa-gamepad"></span> Game </Link>
                                 </li>
                                 <li>
-                                    <Link to={"guests"}> <span className="fa fa-users"></span> Guests </Link>
+                                    <Link to={"/guests"}> <span className="fa fa-users"></span> Guests </Link>
                                 </li>
                                 <li>
                                     <Link to={"/chat"} aria-expanded="false"> <span className="fa fa-comment"></span> Chat </Link>
