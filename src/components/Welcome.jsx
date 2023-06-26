@@ -9,6 +9,8 @@ import image6 from "../assets/image6.jpg"
 import image7 from "../assets/image7.jpg"
 import image8 from "../assets/image8.jpg"
 import image9 from "../assets/image9.jpg"
+import curtain from "../assets/curtain.jpg"
+
 // import image10 from "../assets/image10.jpg"
  const Welcome = () => {
     const navigate = useNavigate();
