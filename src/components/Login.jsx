@@ -19,6 +19,16 @@ import event2 from "../assets/event2.jpg"
 
 
 const Login = () => {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);
   const [username, setUsername] = useState('');
@@ -61,16 +71,6 @@ const Login = () => {
       alert("Invalid username or password.");
     }
   };
-  const HeroCarousel = () => {
-    const settings = {
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
   return (
     
     <div className="login-page Login">
@@ -90,7 +90,6 @@ const Login = () => {
           <MenuItem onClick={() => handleUserTypeSelect('admin')}>Admin</MenuItem>
         </Menu> }
       </header>
-      return (
     <Slider {...settings}>
       <div>
         <img src="evntt.jpg" alt="eventt" />
@@ -102,8 +101,6 @@ const Login = () => {
         <img src="event3.jpg" alt="event3" />
       </div>
     </Slider>
-  );
-  };
 
       <div className="input-container">
      
