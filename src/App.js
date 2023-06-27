@@ -11,6 +11,7 @@ import Chat from "./pages/Chat";
 import Guests from "./pages/Guest";
 import Shop from "./pages/Shop";
 import Schedule from "./pages/Schedule";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/guests" element={<><Topbar /><MenuBar /><Guests /></>} />
           <Route path="/shop" element={<><Topbar /><MenuBar /><Shop /></>} />
           <Route path="/schedule" element={<><Topbar /><MenuBar /><Schedule /></>} />
+          <Route path="/profile" element={<><Topbar /><MenuBar /><Profile /></>} />
           <Route path="/login" element={<><Login /></>} />
           {/* having a error page when no path found */}
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />

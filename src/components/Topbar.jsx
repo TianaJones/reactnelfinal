@@ -33,11 +33,9 @@ const Topbar = () => {
                                     <p className="ml-3">Nellie Jones</p>
                                 </div>
                                 <div className="dropdown-menu dropdown-menu-right">
-                                    <Link className="dropdown-item" to={"/"}>My Profile</Link>
-                                    <Link className="dropdown-item" to={"/"}>Notifications <span className="badge badge-danger">5</span></Link>
-                                    <Link className="dropdown-item" to={"/"}>Event Created</Link>
-                                    <Link className="dropdown-item" to={"/"}>Event Attended </Link>
-                                    <Link className="dropdown-item" to={"/"}>Elements</Link>
+                                    <Link className="dropdown-item" to={"/profile"}>My Profile</Link>
+                                    <Link className="dropdown-item" to={"/notifications"}>Notifications <span className="badge badge-danger">5</span></Link>
+                                    <Link className="dropdown-item" to={"/settings"}>Settings</Link>
                                     <Link className="dropdown-item" to={"/"}>Logout</Link>
                                 </div>
                             </div>
