@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate,Link } from "react-router-dom"; 
-import users from '../data/user.json' ;
+import db from '../data/db.json' ;
 const Login = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const users = db.users;
   const handleLogin = () => {
 
     const auth = users.find(user => user.name === username && user.password === password);
