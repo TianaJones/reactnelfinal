@@ -6,7 +6,7 @@ const Topbar = () => {
                 <div className="row">
                     <div className="col-xl-2 col-lg-2 col-md-6 col-sm-6">
                         <div className="logo">
-                            <h2><Link to={"/"}>Eventify</Link></h2>
+                            <Link to={"/"}><img src="../assets/images/logo.webp" alt="logo" /></Link>
                         </div>
                         <span className="nav-control">
                             <i className="fa fa-bars"></i>

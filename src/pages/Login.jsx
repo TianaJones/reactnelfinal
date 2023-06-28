@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate,Link } from "react-router-dom"; 
 import users from '../data/user.json' ;
 const Login = () => {
   const navigate = useNavigate();
@@ -30,8 +30,8 @@ const Login = () => {
         <div className="page-title">
             <div className="container">
                 <div className="row">
-                    <div className="col-5">
-                        <h1>Eventify</h1>
+                    <div className="col-2">
+                        <Link to={"/"}><img src="../assets/images/logo.webp" alt="logo" className='logo'/></Link>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@ const Login = () => {
                <div className="container">
                    <div className="row creat-event justify-content-center align-items-center">
                    <div class="card w-50">
-                    <div class="card-header">
+                    <div class="card-header bg-danger text-light">
                         <h2>Login</h2>
                     </div>
                     <div class="card-body">
