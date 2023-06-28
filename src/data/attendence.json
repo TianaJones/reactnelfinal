@@ -1,3 +1,17 @@
+{"events":[
+    {   
+        "name": "Martin",
+        "email": "martin@gmail.de",
+        "event": "Birthday",
+        "gift": "none",
+        "Accepted":  "false"
+    }
+
+]
+
+
+},
+
 [
     {   
         "name": "Martin",
