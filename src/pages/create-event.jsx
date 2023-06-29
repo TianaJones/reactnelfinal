@@ -24,7 +24,7 @@ const CreateEvent = () => {
     
       const handleCreateEvent = () => {
         // Send the event data to the json-server API
-        axios.post('http://localhost:3001/events', event)
+        axios.post('http://localhost:5000/events', event)
         .then(response => {
         alert('Event created and saved to JSON server:', response.data);
         })

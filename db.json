@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "name": "Nellie",
+      "password": "Tiana",
+      "type": "admin"
+    },
+    {
+      "name": "Nellie",
+      "password": "Jones@9",
+      "type": "user"
+    }
+  ],
+  "events": [
+    {
+      "title": "fnxflkjjlhk;jik;l",
+      "description": "fkhlkjxhljkhjklghljkhl;jkxh",
+      "day": "22",
+      "hour": "22",
+      "minute": "22",
+      "duration": "22",
+      "location": "Gombo",
+      "sponsor": "fhlhfldhlxhlh",
+      "guest": "",
+      "reminder": "html",
+      "id": 1
+    },
+    {
+      "title": "Music fest",
+      "description": "A fest for all musical lovers",
+      "day": "22",
+      "hour": "22",
+      "minute": "22",
+      "duration": "22",
+      "location": "Delware",
+      "sponsor": "Jack doe",
+      "guest": "22",
+      "reminder": "html",
+      "id": 2
+    },
+    {
+      "title": "",
+      "description": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "duration": "",
+      "location": "",
+      "sponsor": "",
+      "guest": "",
+      "reminder": "",
+      "id": 3
+    },
+    {
+      "title": "dsfsffs",
+      "description": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "duration": "",
+      "location": "",
+      "sponsor": "",
+      "guest": "",
+      "reminder": "",
+      "id": 4
+    },
+    {
+      "title": "dsfsffsadsds",
+      "description": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "duration": "",
+      "location": "",
+      "sponsor": "",
+      "guest": "",
+      "reminder": "",
+      "id": 5
+    }
+  ]
+}
