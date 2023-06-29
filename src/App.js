@@ -13,6 +13,7 @@ import Shop from "./pages/Shop";
 import Schedule from "./pages/Schedule";
 import Profile from "./pages/Profile";
 import Game from "./pages/Game";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,17 +24,17 @@ function App() {
 
         {/* here now the different pages incl. path to jump to and change screen below Navbar */}<Routes>
           <Route path="/" element={<><Topbar /><MenuBar /><Home /></>} />
-          <Route path="/home" element={<><Topbar /><MenuBar /><Home /></>} />
-          <Route path="/home" element={<><Topbar /><MenuBar /><Home /></>} />
-          <Route path="/create-event" element={<><Topbar /><MenuBar /><CreateEvent /></>} />
-          <Route path="/invitation" element={<><Topbar /><MenuBar /><Invitation /></>} />
-          <Route path="/events" element={<><Topbar /><MenuBar /><Events /></>} />
-          <Route path="/chat" element={<><Topbar /><MenuBar /><Chat /></>} />
-          <Route path="/contact" element={<><Topbar /><MenuBar /><Contact /></>} />
-          <Route path="/shop" element={<><Topbar /><MenuBar /><Shop /></>} />
-          <Route path="/schedule" element={<><Topbar /><MenuBar /><Schedule /></>} />
-          <Route path="/profile" element={<><Topbar /><MenuBar /><Profile /></>} />
-          <Route path="/games" element={<><Topbar /><MenuBar /><Game /></>} />
+          <Route path="/home" element={<><Topbar /><MenuBar /><Home /><Footer/></>} />
+          <Route path="/home" element={<><Topbar /><MenuBar /><Home /><Footer/></>} />
+          <Route path="/create-event" element={<><Topbar /><MenuBar /><CreateEvent /><Footer/></>} />
+          <Route path="/invitation" element={<><Topbar /><MenuBar /><Invitation /><Footer/></>} />
+          <Route path="/events" element={<><Topbar /><MenuBar /><Events /><Footer/></>} />
+          <Route path="/chat" element={<><Topbar /><MenuBar /><Chat /><Footer/></>} />
+          <Route path="/contact" element={<><Topbar /><MenuBar /><Contact /><Footer/></>} />
+          <Route path="/shop" element={<><Topbar /><MenuBar /><Shop /><Footer/></>} />
+          <Route path="/schedule" element={<><Topbar /><MenuBar /><Schedule /><Footer/></>} />
+          <Route path="/profile" element={<><Topbar /><MenuBar /><Profile /><Footer/></>} />
+          <Route path="/games" element={<><Topbar /><MenuBar /><Game /><Footer/></>} />
           <Route path="/login" element={<><Login /></>} />
           {/* having a error page when no path found */}
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
