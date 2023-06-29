@@ -14,9 +14,6 @@ const MenuBar = () => {
                                     <Link to={"/games"}> <span className="fa fa-gamepad"></span> Game </Link>
                                 </li>
                                 <li>
-                                    <Link to={"/guests"}> <span className="fa fa-users"></span> Guests </Link>
-                                </li>
-                                <li>
                                     <Link to={"/chat"}> <span className="fa fa-comment"></span> Chat </Link>
                                 </li>
                                 <li>
@@ -24,6 +21,9 @@ const MenuBar = () => {
                                 </li>
                                 <li>
                                     <Link to={"/shop"}> <span className="fa fa-shopping-bag"></span> Shop </Link>
+                                </li>
+                                <li>
+                                    <Link to={"/contact"}> <span className="fa fa-map-marker"></span> Contact </Link>
                                 </li>
                             </ul>
                         </nav>

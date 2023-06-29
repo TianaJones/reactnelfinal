@@ -18,12 +18,12 @@ return(
                             <div className="col-xl-6">
                                 <div className="card event-card">
                                     <div className="event-card-img">
-                                        <img className="img-fluid" src="../assets/images/events/event-main.jpg" alt="placeholder image"/>
+                                        <img className="img-fluid" src="../assets/images/thumb/bice.jpg" alt="placeholder image"/>
                                     </div>
                                     <div className="card-body">
                                         <div className="row">
                                             <div className="col-8">
-                                                <h5>Nike Gift Basket</h5>
+                                                <h5>Gift Pack</h5>
                                             </div>
                                             <div className="col-4">
                                                 <p><strong>€100</strong></p>
@@ -35,15 +35,48 @@ return(
                             <div className="col-xl-6">
                                 <div className="card event-card">
                                     <div className="event-card-img">
-                                        <img className="img-fluid" src="../assets/images/events/event-main2.jpg" alt="placeholder image"/>
+                                        <img className="img-fluid" src="../assets/images/thumb/bic.jpg" alt="placeholder image"/>
                                     </div>
                                     <div className="card-body">
                                         <div className="row">
                                             <div className="col-8">
-                                                <h5>Nike Gift Basket</h5>
+                                                <h5>Bicycle</h5>
                                             </div>
                                             <div className="col-4">
                                                 <p><strong>€56</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-6">
+                                <div className="card event-card">
+                                    <div className="event-card-img">
+                                        <img className="img-fluid" src="../assets/images/thumb/jew1.jpg" alt="placeholder image"/>
+                                    </div>
+                                    <div className="card-body">
+                                        <div className="row">
+                                            <div className="col-8">
+                                                <h5>Makeup tools</h5>
+                                            </div>
+                                            <div className="col-4">
+                                                <p><strong>€65</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div className="col-xl-6">
+                                <div className="card event-card">
+                                    <div className="event-card-img">
+                                        <img className="img-fluid" src="../assets/images/thumb/jew.jpg" alt="placeholder image"/>
+                                    </div>
+                                    <div className="card-body">
+                                        <div className="row">
+                                            <div className="col-8">
+                                                <h5>Louis vu kles</h5>
+                                            </div>
+                                            <div className="col-4">
+                                                <p><strong>€90</strong></p>
                                             </div>
                                         </div>
                                     </div>

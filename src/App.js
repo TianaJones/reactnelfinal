@@ -8,7 +8,7 @@ import Invitation from "./pages/invitation";
 import Events from "./pages/Events";
 import Login from "./pages/Login";
 import Chat from "./pages/Chat";
-import Guests from "./pages/Guest";
+import Contact from "./pages/Contact";
 import Shop from "./pages/Shop";
 import Schedule from "./pages/Schedule";
 import Profile from "./pages/Profile";
@@ -29,7 +29,7 @@ function App() {
           <Route path="/invitation" element={<><Topbar /><MenuBar /><Invitation /></>} />
           <Route path="/events" element={<><Topbar /><MenuBar /><Events /></>} />
           <Route path="/chat" element={<><Topbar /><MenuBar /><Chat /></>} />
-          <Route path="/guests" element={<><Topbar /><MenuBar /><Guests /></>} />
+          <Route path="/contact" element={<><Topbar /><MenuBar /><Contact /></>} />
           <Route path="/shop" element={<><Topbar /><MenuBar /><Shop /></>} />
           <Route path="/schedule" element={<><Topbar /><MenuBar /><Schedule /></>} />
           <Route path="/profile" element={<><Topbar /><MenuBar /><Profile /></>} />
