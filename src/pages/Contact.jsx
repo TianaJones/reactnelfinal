@@ -29,16 +29,16 @@ const Shop = () => {
                                     </div>
                                     <div class="col-md-6">
                                         <label class="m-t-20">Email</label>
-                                        <input type="password" class="form-control b-r-0" placeholder="Input your email" />
+                                        <input type="text" class="form-control b-r-0" placeholder="Input your email" />
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <label class="m-t-20">Message</label>
-                                        <input type="password" class="form-control b-r-0" placeholder="input password" />
+                                        <textarea class="form-control b-r-0" placeholder="input password" ></textarea>
                                     </div>
                                 </div>
-                                <button class="btn btn-danger m-t-50" onClick={handleLogin}>Login
+                                <button class="btn btn-danger m-t-50">Login
                                 </button>
                             </div>
                         </div>
