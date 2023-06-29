@@ -11,6 +11,9 @@ const MenuBar = () => {
                                     <Link to={"/events"}> <span className="fa fa-calendar-check-o"></span> Events </Link>
                                 </li>
                                 <li>
+                                    <Link to={"/Menu"}> <span className="fa fa-cutlery"></span> Menu </Link>
+                                </li>
+                                <li>
                                     <Link to={"/games"}> <span className="fa fa-gamepad"></span> Game </Link>
                                 </li>
                                 <li>

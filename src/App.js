@@ -14,6 +14,7 @@ import Schedule from "./pages/Schedule";
 import Profile from "./pages/Profile";
 import Game from "./pages/Game";
 import Footer from "./components/Footer";
+import Menu from "./pages/Menu";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         {/* adding our component Navbar fixed on top */}
 
         {/* here now the different pages incl. path to jump to and change screen below Navbar */}<Routes>
-          <Route path="/" element={<><Topbar /><MenuBar /><Home /></>} />
+          <Route path="/" element={<><Topbar /><MenuBar /><Home /><Footer/></>} />
           <Route path="/home" element={<><Topbar /><MenuBar /><Home /><Footer/></>} />
           <Route path="/home" element={<><Topbar /><MenuBar /><Home /><Footer/></>} />
           <Route path="/create-event" element={<><Topbar /><MenuBar /><CreateEvent /><Footer/></>} />
@@ -35,6 +36,7 @@ function App() {
           <Route path="/schedule" element={<><Topbar /><MenuBar /><Schedule /><Footer/></>} />
           <Route path="/profile" element={<><Topbar /><MenuBar /><Profile /><Footer/></>} />
           <Route path="/games" element={<><Topbar /><MenuBar /><Game /><Footer/></>} />
+          <Route path="/menu" element={<><Topbar /><MenuBar /><Menu /><Footer/></>} />
           <Route path="/login" element={<><Login /></>} />
           {/* having a error page when no path found */}
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
